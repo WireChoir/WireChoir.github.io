@@ -1,0 +1,321 @@
+#myheader{
+    text-align: center;
+    font-size: 200px;
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    
+}
+.font{
+  font-size: medium;
+}
+.img2{
+    grid-area: image2;
+    
+    width: 100%;
+}
+.img3{
+    grid-area: img3;
+    width:50%;
+    
+}
+
+.vid1{
+    grid-area: vid1;
+  width:100%
+}
+.vid2{
+    grid-area: vid2;
+}
+.vid3{
+    grid-area: vid3;
+}
+.header{
+    grid-area: header;
+    font-family: "Lucida handwriting", "	Brush Script MT", cursive;
+}
+.main{
+    grid-area: main;
+}
+.main2{
+    grid-area: main2;
+}
+.main3{
+    grid-area: main3;
+}
+.main4{
+    grid-area: main4;
+}
+.footer{
+    grid-area: footer;
+}
+
+.wrapper {
+  width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: 'header header'
+      'main main'
+        'image2 image2'
+        "main2 main2"
+        "img3 img3"
+        "main3 main3"
+        "vid1 vid1"
+        "main4 main4"
+        'footer footer';
+}
+
+.box {
+    width:100%;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: small;
+}
+
+/*
+.header {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  transition: width 2s;
+}
+.header a {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  transition: width 2s;
+    color:white;
+}
+.header:hover {
+  width: 600px;
+}
+.header:hover a {
+  width: 400px;
+    color:white;
+
+
+}*/
+.lists{
+    font-size: 20px;
+}
+body{
+    font-size: small;
+}
+
+
+/* HINT: This media query shoud activate when screen size is greater than 600px */
+@media only screen and (min-width:700px) {
+    .wrapper {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr;
+        grid-gap: 1em;
+        grid-template-areas: "header header header"
+            "image2 main main"
+            "image2 main main"
+            "main2 main2 img3"
+            "vid1 vid1 main3 "
+            "main4 main4 main4"
+            
+        
+        "footer footer footer";
+        
+    }
+    .img3{
+      grid-area: img3;
+      width:100%;
+  }
+  .img2{
+    grid-area: image2;
+    
+    width: 500px;
+}
+    .box{
+      font-size: 40px;
+      width:100%;
+      font-family: "Times New Roman", Times, serif;
+      
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:black;
+      }
+     
+      
+      li {
+        float: left;
+        
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 30px;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #333;
+      }
+      body{
+        margin-left: 100px;
+        margin-right: 100px;
+        
+      }
+
+}
+
+/*You shouldnt have to touch any of this CSS below! */
+.main,
+.side1,
+.side2,
+.footer {
+   
+    padding: 20px;
+    font-family: arial;
+}
+body{
+    background: black;
+}
+.image1 {
+    object-fit: fill;
+  
+}
+/*
+.header {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  transition: width 2s;
+}
+.header a {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  transition: width 2s;
+    color:gray;
+}
+.header:hover {
+  width: 400px;
+}
+.header:hover a {
+  width: 400px;
+    color:white;
+
+
+}*/
+.lists{
+    font-size: 20px;
+}
+
+
+.main4,
+.main3,
+.main2,
+.main{
+    font-size: 40px;
+    background-color: black;
+    color: white;
+}
+#banner {
+
+margin-bottom: 15px; width: 100%;
+}
+
+
+#banner img {
+width: 100%;
+    
+}
+.nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.side1,
+.side2 {
+    background-color: #0d0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body{
+  font-size: small;
+}
+
