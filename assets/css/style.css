@@ -108,8 +108,7 @@ body{
 
 
 /* HINT: This media query shoud activate when screen size is greater than 600px */
-@media only screen and (min-width:1000
-   px) {
+@media only screen and (min-width:1000px) {
     .wrapper {
     
         display: grid;
